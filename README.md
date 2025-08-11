@@ -1,5 +1,3 @@
----
-
 # TripMate 🌍✈️
 
 **TripMate** is a JavaFX + Flask travel planner with an AI chatbot, providing:
