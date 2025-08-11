@@ -1,0 +1,191 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #667eea, #764ba2, #f093fb);
+    -fx-font-family: "Segoe UI Emoji", "Segoe UI", "Apple Color Emoji", "Noto Color Emoji";
+}
+
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #1a202c;
+    -fx-font-family: "Segoe UI Emoji", "Segoe UI", "Apple Color Emoji", "Noto Color Emoji";
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.9), 2, 0.8, 0, 1);
+}
+
+.text-field {
+    -fx-background-color: linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(248,250,252,0.95));
+    -fx-border-color: linear-gradient(to right, #667eea, #764ba2);
+    -fx-border-width: 2px;
+    -fx-border-radius: 25;
+    -fx-background-radius: 25;
+    -fx-font-size: 16px;
+    -fx-padding: 12 24 12 24;
+    -fx-effect: dropshadow(gaussian, rgba(102,126,234,0.3), 8, 0.3, 0, 2);
+    -fx-font-family: "Segoe UI Emoji", "Segoe UI", "Apple Color Emoji", "Noto Color Emoji";
+}
+
+.text-field:focused {
+    -fx-border-color: linear-gradient(to right, #4facfe, #00f2fe);
+    -fx-effect: dropshadow(gaussian, rgba(79,172,254,0.5), 12, 0.4, 0, 3);
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: linear-gradient(to right, #667eea, #764ba2);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-font-size: 16px;
+    -fx-padding: 12 24 12 24;
+    -fx-effect: dropshadow(gaussian, rgba(102,126,234,0.4), 8, 0.3, 0, 3);
+    -fx-font-family: "Segoe UI Emoji", "Segoe UI", "Apple Color Emoji", "Noto Color Emoji";
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #4facfe, #00f2fe);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(79,172,254,0.6), 12, 0.4, 0, 4);
+}
+
+.button:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* Tab header background (navigation bar area) */
+.tab-pane .tab-header-background {
+    -fx-background-color: linear-gradient(to right, rgba(255,255,255,0.9), rgba(248,250,252,0.9));
+    -fx-border-color: linear-gradient(to right, #667eea, #764ba2);
+    -fx-border-width: 0 0 3px 0;
+    -fx-effect: dropshadow(gaussian, rgba(102,126,234,0.2), 5, 0.3, 0, 2);
+}
+
+/* Tabs */
+.tab {
+    -fx-background-color: linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(240,245,250,0.95));
+    -fx-text-fill: #1a202c;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 12px 20px;
+    -fx-background-radius: 15px 15px 0 0;
+    -fx-font-family: "Segoe UI Emoji", "Segoe UI", "Apple Color Emoji", "Noto Color Emoji";
+    -fx-effect: dropshadow(gaussian, rgba(102,126,234,0.2), 4, 0.4, 0, 2);
+    -fx-border-color: rgba(102,126,234,0.3);
+    -fx-border-width: 1px;
+    -fx-border-radius: 15px 15px 0 0;
+}
+
+.tab:hover {
+    -fx-background-color: linear-gradient(to bottom, #4facfe, #00f2fe);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(79,172,254,0.6), 8, 0.4, 0, 3);
+}
+
+.tab:selected {
+    -fx-background-color: linear-gradient(to bottom, #667eea, #764ba2);
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(102,126,234,0.7), 10, 0.4, 0, 4);
+}
+
+/* Text area */
+.text-area {
+    -fx-background-color: linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(248,250,252,0.95));
+    -fx-border-color: linear-gradient(to right, #48bb78, #38a169);
+    -fx-border-width: 2px;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-font-size: 16px;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(gaussian, rgba(72,187,120,0.3), 8, 0.3, 0, 2);
+    -fx-font-family: "Segoe UI Emoji", "Segoe UI", "Apple Color Emoji", "Noto Color Emoji";
+}
+
+.text-area:focused {
+    -fx-border-color: linear-gradient(to right, #4facfe, #00f2fe);
+    -fx-effect: dropshadow(gaussian, rgba(79,172,254,0.5), 12, 0.4, 0, 3);
+}
+
+/* ScrollPane transparency */
+.scroll-pane {
+    -fx-background: transparent;
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar {
+    -fx-background-color: linear-gradient(to bottom, rgba(102,126,234,0.3), rgba(118,75,162,0.3));
+    -fx-background-radius: 10;
+}
+
+.scroll-pane .scroll-bar .thumb {
+    -fx-background-color: linear-gradient(to bottom, #667eea, #764ba2);
+    -fx-background-radius: 8;
+}
+
+/* Error label */
+.label.error {
+    -fx-text-fill: #e53e3e;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(229,62,62,0.3), 3, 0.3, 0, 1);
+}
+
+/* Special styling for main section titles */
+.label.title {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to right, #4facfe, #764ba2, #00f2fe);
+    -fx-font-family: "Segoe UI Emoji", "Segoe UI", "Apple Color Emoji", "Noto Color Emoji";
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4, 0.5, 0, 2);
+    -fx-padding: 10 0 20 0;
+}
+
+
+
+/* Improved visibility for result text */
+.label.result {
+    -fx-font-size: 16px;
+    -fx-text-fill: #1a202c;
+    -fx-font-weight: bold;
+    -fx-background-color: rgba(255,255,255,0.9);
+    -fx-background-radius: 8;
+    -fx-padding: 4 8 4 8;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.9), 2, 0.6, 0, 1);
+}
+
+/* High visibility prompt text */
+.text-field .text {
+    -fx-text-fill: #1a202c;
+    -fx-font-weight: bold;
+}
+
+/* Chart styling */
+.chart {
+    -fx-background-color: rgba(255,255,255,0.9);
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(102,126,234,0.3), 8, 0.3, 0, 2);
+}
+
+/* City intro paragraph (About This City) */
+.label.city-intro {
+    -fx-font-size: 17px;
+    -fx-text-fill: #ffffff; /* White text for visibility */
+    -fx-font-weight: normal;
+    -fx-wrap-text: true;
+    -fx-padding: 10 14 10 14;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 3, 0.5, 0, 1);
+}
+
+/* Weather, best months, and similar info labels */
+.label.result, .label.info, .label.weather {
+    -fx-font-size: 16px;
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-font-weight: bold;
+    -fx-padding: 6 10 6 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 3, 0.5, 0, 1);
+}

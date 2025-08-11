@@ -1,0 +1,204 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #0f0c29, #24243e, #302b63);
+    -fx-font-family: "Segoe UI Emoji", "Segoe UI", "Apple Color Emoji", "Noto Color Emoji";
+}
+
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #e2e8f0;
+    -fx-font-family: "Segoe UI Emoji", "Segoe UI", "Apple Color Emoji", "Noto Color Emoji";
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 2, 0.5, 0, 2);
+}
+.text-field {
+    -fx-background-color: linear-gradient(to bottom, rgba(45,55,72,0.95), rgba(26,32,44,0.95));
+    -fx-border-color: linear-gradient(to right, #667eea, #764ba2);
+    -fx-border-width: 2px;
+    -fx-border-radius: 25;
+    -fx-background-radius: 25;
+    -fx-font-size: 16px;
+    -fx-text-fill: #f7fafc;
+    -fx-font-weight: bold;
+    -fx-padding: 12 24 12 24;
+    -fx-effect: dropshadow(gaussian, rgba(102,126,234,0.4), 8, 0.3, 0, 2);
+    -fx-font-family: "Segoe UI Emoji", "Segoe UI", "Apple Color Emoji", "Noto Color Emoji";
+}
+
+/* Force actual typed text to be visible */
+.text-field .text {
+    -fx-fill: #f7fafc;
+    -fx-font-weight: bold;
+}
+
+/* Alternative styling for text input content */
+.text-field > .text {
+    -fx-fill: white;
+}
+
+.text-field:focused {
+    -fx-border-color: linear-gradient(to right, #a78bfa, #ec4899);
+    -fx-effect: dropshadow(gaussian, rgba(167,139,250,0.6), 12, 0.4, 0, 3);
+}
+
+/* Buttons (general + Toggle Theme) */
+.button {
+    -fx-background-color: linear-gradient(to right, #667eea, #764ba2);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-font-size: 16px;
+    -fx-padding: 12 24 12 24;
+    -fx-effect: dropshadow(gaussian, rgba(102,126,234,0.5), 8, 0.3, 0, 3);
+    -fx-font-family: "Segoe UI Emoji", "Segoe UI", "Apple Color Emoji", "Noto Color Emoji";
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #a78bfa, #ec4899);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(167,139,250,0.7), 12, 0.4, 0, 4);
+}
+
+.button:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* Tab header background (navigation bar area) */
+.tab-pane .tab-header-background {
+    -fx-background-color: linear-gradient(to right, rgba(45,55,72,0.9), rgba(26,32,44,0.9));
+    -fx-border-color: linear-gradient(to right, #667eea, #764ba2);
+    -fx-border-width: 0 0 3px 0;
+    -fx-effect: dropshadow(gaussian, rgba(102,126,234,0.3), 5, 0.3, 0, 2);
+}
+
+/* Tabs */
+.tab {
+    -fx-background-color: linear-gradient(to bottom, rgba(45,55,72,0.95), rgba(26,32,44,0.95));
+    -fx-text-fill: #e2e8f0;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 12px 20px;
+    -fx-background-radius: 15px 15px 0 0;
+    -fx-font-family: "Segoe UI Emoji", "Segoe UI", "Apple Color Emoji", "Noto Color Emoji";
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 4, 0.4, 0, 2);
+    -fx-border-color: rgba(255,255,255,0.2);
+    -fx-border-width: 1px;
+    -fx-border-radius: 15px 15px 0 0;
+}
+
+.tab:hover {
+    -fx-background-color: linear-gradient(to bottom, #a78bfa, #ec4899);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(167,139,250,0.7), 8, 0.4, 0, 3);
+}
+
+.tab:selected {
+    -fx-background-color: linear-gradient(to bottom, #667eea, #764ba2);
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(102,126,234,0.8), 10, 0.4, 0, 4);
+}
+
+/* Text area styling */
+.text-area {
+    -fx-background-color: linear-gradient(to bottom, rgba(45,55,72,0.95), rgba(26,32,44,0.95));
+    -fx-border-color: linear-gradient(to right, #48bb78, #38a169);
+    -fx-border-width: 2px;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-font-size: 16px;
+    -fx-text-fill: #e2e8f0;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(gaussian, rgba(72,187,120,0.4), 8, 0.3, 0, 2);
+    -fx-font-family: "Segoe UI Emoji", "Segoe UI", "Apple Color Emoji", "Noto Color Emoji";
+}
+
+.text-area:focused {
+    -fx-border-color: linear-gradient(to right, #a78bfa, #ec4899);
+    -fx-effect: dropshadow(gaussian, rgba(167,139,250,0.6), 12, 0.4, 0, 3);
+}
+
+/* ScrollPane transparency */
+.scroll-pane {
+    -fx-background: transparent;
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar {
+    -fx-background-color: linear-gradient(to bottom, rgba(102,126,234,0.4), rgba(118,75,162,0.4));
+    -fx-background-radius: 10;
+}
+
+.scroll-pane .scroll-bar .thumb {
+    -fx-background-color: linear-gradient(to bottom, #667eea, #764ba2);
+    -fx-background-radius: 8;
+}
+
+/* Error label */
+.label.error {
+    -fx-text-fill: #fc8181;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(252,129,129,0.4), 3, 0.3, 0, 1);
+}
+
+/* Special styling for title labels */
+.label.title {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to right, #a78bfa, #ec4899, #f9a8d4);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 3, 0.6, 0, 2);
+}
+
+
+/* Improved visibility for result text */
+.label.result {
+    -fx-font-size: 16px;
+    -fx-text-fill: #f7fafc;
+    -fx-font-weight: bold;
+    -fx-background-color: rgba(45,55,72,0.9);
+    -fx-background-radius: 8;
+    -fx-padding: 4 8 4 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 2, 0.6, 0, 1);
+}
+
+/* High visibility prompt text */
+.text-field .text {
+    -fx-text-fill: #f7fafc;
+    -fx-font-weight: bold;
+}
+
+/* Chart styling */
+.chart {
+    -fx-background-color: rgba(45,55,72,0.9);
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(102,126,234,0.4), 8, 0.3, 0, 2);
+}
+
+/* Chat TextArea – dark theme */
+.text-area.chat-log {
+    -fx-text-fill: #ffffff;                 /* text color */
+    -fx-control-inner-background: #0d1220; /* inner bg (skin-friendly) */
+    -fx-background-insets: 0;
+    -fx-background-radius: 18;
+    -fx-border-color: linear-gradient(to right, #a78bfa, #ec4899);
+    -fx-border-width: 2px;
+    -fx-background-color: transparent;
+    -fx-padding: 16;
+}
+
+/* Make sure the scrollable content is dark too */
+.text-area.chat-log .content {
+    -fx-background-color: #0d1220;
+    -fx-background-radius: 16;
+}
+
+/* Caret, selection = visible */
+.text-area.chat-log .caret { -fx-stroke: #ffffff; }
+.text-area.chat-log .selection { -fx-background-color: rgba(167,139,250,0.55); }

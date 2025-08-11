@@ -1,0 +1,866 @@
+2025-06-25 16:12:46,539 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-25 16:12:46,546 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-25 16:12:46,592 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-25 16:12:49,009 - WARNING -  * Debugger is active!
+2025-06-25 16:12:49,015 - INFO -  * Debugger PIN: 371-430-250
+2025-06-25 16:18:19,483 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-25 16:18:19,483 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-25 16:18:19,529 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-25 16:18:22,060 - WARNING -  * Debugger is active!
+2025-06-25 16:18:22,060 - INFO -  * Debugger PIN: 371-430-250
+2025-06-25 16:18:31,761 - INFO - Processing chatbot query: hi...
+2025-06-25 16:18:34,286 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 16:18:37,187 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 16:18:37,190 - INFO - Chatbot responded successfully to query: hi...
+2025-06-25 16:18:37,193 - INFO - 127.0.0.1 - - [25/Jun/2025 16:18:37] "GET /chatbot?query=hi HTTP/1.1" 200 -
+2025-06-25 16:18:48,191 - INFO - Processing chatbot query: how are you?...
+2025-06-25 16:18:48,944 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 16:18:50,602 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 16:18:50,644 - INFO - Chatbot responded successfully to query: how are you?...
+2025-06-25 16:18:50,647 - INFO - 127.0.0.1 - - [25/Jun/2025 16:18:50] "GET /chatbot?query=how+are+you? HTTP/1.1" 200 -
+2025-06-25 16:19:02,198 - INFO - Processing place info request for city: paris
+2025-06-25 16:19:02,338 - ERROR - Error processing place info for paris: 'coord'
+2025-06-25 16:19:02,343 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\ProjectApp\TripMate\backend\app.py", line 84, in place_info
+    weather = get_weather(city)
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\ProjectApp\TripMate\backend\weather_module.py", line 9, in get_weather
+    "lat": res["coord"]["lat"],  # added
+           ~~~^^^^^^^^^
+KeyError: 'coord'
+
+2025-06-25 16:19:02,345 - INFO - 127.0.0.1 - - [25/Jun/2025 16:19:02] "[35m[1mGET /place-info?city=paris HTTP/1.1[0m" 500 -
+2025-06-25 16:24:53,219 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp\\TripMate\\backend\\weather_module.py', reloading
+2025-06-25 16:24:53,257 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp\\TripMate\\backend\\weather_module.py', reloading
+2025-06-25 16:24:53,713 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-25 16:24:56,763 - WARNING -  * Debugger is active!
+2025-06-25 16:24:56,773 - INFO -  * Debugger PIN: 371-430-250
+2025-06-25 16:25:03,411 - INFO - Processing place info request for city: paris
+2025-06-25 16:25:03,960 - INFO - Weather data retrieved for paris
+2025-06-25 16:25:03,966 - INFO - Season info retrieved for paris
+2025-06-25 16:25:06,686 - INFO - Images retrieved for paris: 5 images
+2025-06-25 16:25:06,688 - INFO - Successfully processed place info for paris
+2025-06-25 16:25:06,688 - INFO - 127.0.0.1 - - [25/Jun/2025 16:25:06] "GET /place-info?city=paris HTTP/1.1" 200 -
+2025-06-25 16:25:53,726 - INFO - Processing place info request for city: paris
+2025-06-25 16:25:54,124 - INFO - Weather data retrieved for paris
+2025-06-25 16:25:54,125 - INFO - Season info retrieved for paris
+2025-06-25 16:25:55,375 - INFO - Images retrieved for paris: 5 images
+2025-06-25 16:25:55,376 - INFO - Successfully processed place info for paris
+2025-06-25 16:25:55,378 - INFO - 127.0.0.1 - - [25/Jun/2025 16:25:55] "GET /place-info?city=paris HTTP/1.1" 200 -
+2025-06-25 17:07:37,379 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\_pytest\\cacheprovider.py', reloading
+2025-06-25 17:07:38,167 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-25 17:07:40,788 - WARNING -  * Debugger is active!
+2025-06-25 17:07:40,791 - INFO -  * Debugger PIN: 371-430-250
+2025-06-25 17:09:31,147 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp\\TripMate\\backend\\db_module,py', reloading
+2025-06-25 17:09:31,767 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\__init__.py', reloading
+2025-06-25 17:09:31,772 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\lib\\_old_api.py', reloading
+2025-06-25 17:09:31,790 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp\\TripMate\\backend\\gallery_module.py', reloading
+2025-06-25 17:09:31,793 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\__init__.py', reloading
+2025-06-25 17:09:31,802 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\_types.py', reloading
+2025-06-25 17:09:31,803 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\_utils\\__init__.py', reloading
+2025-06-25 17:09:31,805 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\_client.py', reloading
+2025-06-25 17:09:31,806 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\_models.py', reloading
+2025-06-25 17:09:31,807 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\_constants.py', reloading
+2025-06-25 17:09:31,807 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\_base_client.py', reloading
+2025-06-25 17:09:31,808 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\_utils\\_logs.py', reloading
+2025-06-25 17:09:31,810 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\httpx\\__init__.py', reloading
+2025-06-25 17:09:31,811 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\amadeus.py', reloading
+2025-06-25 17:09:31,812 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\client\\errors.py', reloading
+2025-06-25 17:09:31,813 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\mixins\\validator.py', reloading
+2025-06-25 17:09:31,813 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\mixins\\http.py', reloading
+2025-06-25 17:09:31,814 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\mixins\\pagination.py', reloading
+2025-06-25 17:09:31,815 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\namespaces\\__init__.py', reloading
+2025-06-25 17:09:31,815 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\namespaces\\core.py', reloading
+2025-06-25 17:09:31,815 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\namespaces\\_reference_data.py', reloading
+2025-06-25 17:09:31,817 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\namespaces\\_travel.py', reloading
+2025-06-25 17:09:31,818 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\namespaces\\_shopping.py', reloading
+2025-06-25 17:09:31,823 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\_compat.py', reloading
+2025-06-25 17:09:31,824 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\_streaming.py', reloading
+2025-06-25 17:09:31,825 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\resources\\chat\\chat.py', reloading
+2025-06-25 17:09:31,829 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pydantic\\__init__.py', reloading
+2025-06-25 17:09:31,829 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\httpx\\_config.py', reloading
+2025-06-25 17:09:31,831 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pydantic\\_migration.py', reloading
+2025-06-25 17:09:31,832 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pydantic_core\\__init__.py', reloading
+2025-06-25 17:09:31,833 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pydantic_core\\core_schema.py', reloading
+2025-06-25 17:09:31,835 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pydantic\\_internal\\_generate_schema.py', reloading
+2025-06-25 17:09:31,836 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pydantic\\aliases.py', reloading
+2025-06-25 17:09:31,837 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pydantic\\config.py', reloading
+2025-06-25 17:09:31,838 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pydantic\\errors.py', reloading
+2025-06-25 17:09:31,840 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pydantic\\fields.py', reloading
+2025-06-25 17:09:31,841 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pydantic\\main.py', reloading
+2025-06-25 17:09:31,843 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pydantic\\networks.py', reloading
+2025-06-25 17:09:31,844 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pydantic\\types.py', reloading
+2025-06-25 17:09:31,845 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pydantic\\deprecated\\tools.py', reloading
+2025-06-25 17:09:31,847 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pydantic\\_internal\\_model_construction.py', reloading
+2025-06-25 17:09:31,848 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pydantic\\_internal\\_repr.py', reloading
+2025-06-25 17:09:31,851 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\annotated_types\\__init__.py', reloading
+2025-06-25 17:09:31,852 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pydantic\\_internal\\_internal_dataclass.py', reloading
+2025-06-25 17:09:31,854 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\_utils\\_utils.py', reloading
+2025-06-25 17:09:31,855 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\httpx\\_client.py', reloading
+2025-06-25 17:09:31,857 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\httpx\\_urls.py', reloading
+2025-06-25 17:09:31,858 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\_resource.py', reloading
+2025-06-25 17:09:31,862 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\resources\\chat\\completions\\completions.py', reloading
+2025-06-25 17:09:31,865 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\__init__.py', reloading
+2025-06-25 17:09:31,868 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\completion_create_params.py', reloading
+2025-06-25 17:09:31,869 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\shared\\chat_model.py', reloading
+2025-06-25 17:09:31,870 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion.py', reloading
+2025-06-25 17:09:31,871 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\shared_params\\metadata.py', reloading
+2025-06-25 17:09:31,871 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\shared\\reasoning_effort.py', reloading
+2025-06-25 17:09:31,873 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_chunk.py', reloading
+2025-06-25 17:09:31,874 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_tool_param.py', reloading
+2025-06-25 17:09:31,875 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_audio_param.py', reloading
+2025-06-25 17:09:31,876 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_message_param.py', reloading
+2025-06-25 17:09:31,876 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_stream_options_param.py', reloading
+2025-06-25 17:09:31,878 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_prediction_content_param.py', reloading
+2025-06-25 17:09:31,878 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_tool_choice_option_param.py', reloading
+2025-06-25 17:09:31,879 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_tool_message_param.py', reloading
+2025-06-25 17:09:31,880 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_user_message_param.py', reloading
+2025-06-25 17:09:31,880 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_system_message_param.py', reloading
+2025-06-25 17:09:31,881 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_function_message_param.py', reloading
+2025-06-25 17:09:31,882 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_assistant_message_param.py', reloading
+2025-06-25 17:09:31,882 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_developer_message_param.py', reloading
+2025-06-25 17:09:31,883 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_content_part_text_param.py', reloading
+2025-06-25 17:09:31,883 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_content_part_param.py', reloading
+2025-06-25 17:09:31,885 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_content_part_image_param.py', reloading
+2025-06-25 17:09:31,886 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_content_part_input_audio_param.py', reloading
+2025-06-25 17:09:31,887 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_message_tool_call_param.py', reloading
+2025-06-25 17:09:31,887 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_content_part_refusal_param.py', reloading
+2025-06-25 17:09:31,888 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_audio.py', reloading
+2025-06-25 17:09:31,889 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_message.py', reloading
+2025-06-25 17:09:31,889 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_message_tool_call.py', reloading
+2025-06-25 17:09:31,890 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_named_tool_choice_param.py', reloading
+2025-06-25 17:09:31,890 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\chat\\chat_completion_function_call_option_param.py', reloading
+2025-06-25 17:09:31,891 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\shared_params\\function_parameters.py', reloading
+2025-06-25 17:09:31,892 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\shared_params\\response_format_text.py', reloading
+2025-06-25 17:09:31,892 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\shared_params\\response_format_json_object.py', reloading
+2025-06-25 17:09:31,893 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\shared_params\\response_format_json_schema.py', reloading
+2025-06-25 17:09:31,893 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\shared_params\\function_definition.py', reloading
+2025-06-25 17:09:31,894 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\openai\\types\\completion_usage.py', reloading
+2025-06-25 17:09:31,894 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\client\\decorator.py', reloading
+2025-06-25 17:09:31,895 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\shopping\\_flight_dates.py', reloading
+2025-06-25 17:09:31,895 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\shopping\\_flight_destinations.py', reloading
+2025-06-25 17:09:31,896 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\shopping\\_flight_offers.py', reloading
+2025-06-25 17:09:31,896 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\shopping\\_flight_offers_search.py', reloading
+2025-06-25 17:09:31,896 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-06-25 17:09:31,898 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+2025-06-25 17:09:31,899 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\flask\\app.py', reloading
+2025-06-25 17:09:31,900 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\flask\\blueprints.py', reloading
+2025-06-25 17:09:31,901 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\flask\\globals.py', reloading
+2025-06-25 17:09:31,902 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\flask\\helpers.py', reloading
+2025-06-25 17:09:31,903 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\flask\\wrappers.py', reloading
+2025-06-25 17:09:31,904 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\werkzeug\\datastructures\\__init__.py', reloading
+2025-06-25 17:09:31,905 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+2025-06-25 17:09:31,906 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\flask\\typing.py', reloading
+2025-06-25 17:09:31,907 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\flask\\sansio\\app.py', reloading
+2025-06-25 17:09:31,924 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\flask\\sansio\\scaffold.py', reloading
+2025-06-25 17:09:31,929 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+2025-06-25 17:09:31,932 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+2025-06-25 17:09:31,933 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\flask\\sansio\\blueprints.py', reloading
+2025-06-25 17:09:31,936 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+2025-06-25 17:09:31,939 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+2025-06-25 17:09:31,939 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\werkzeug\\_internal.py', reloading
+2025-06-25 17:09:31,940 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+2025-06-25 17:09:31,944 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\traceback.py', reloading
+2025-06-25 17:09:31,945 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\datetime.py', reloading
+2025-06-25 17:09:31,947 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\_pydatetime.py', reloading
+2025-06-25 17:09:32,290 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-25 17:09:34,134 - WARNING -  * Debugger is active!
+2025-06-25 17:09:34,136 - INFO -  * Debugger PIN: 371-430-250
+2025-06-25 17:24:27,223 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-25 17:24:27,223 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-25 17:24:27,231 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-25 17:24:28,862 - WARNING -  * Debugger is active!
+2025-06-25 17:24:28,865 - INFO -  * Debugger PIN: 371-430-250
+2025-06-25 17:24:57,128 - INFO - 127.0.0.1 - - [25/Jun/2025 17:24:57] "GET /search_statistics HTTP/1.1" 200 -
+2025-06-25 17:25:07,814 - INFO - Processing search for paris
+2025-06-25 17:25:08,572 - INFO - 127.0.0.1 - - [25/Jun/2025 17:25:08] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-06-25 17:25:16,566 - INFO - 127.0.0.1 - - [25/Jun/2025 17:25:16] "[33mGET /chatbot?query=hello HTTP/1.1[0m" 404 -
+2025-06-25 17:26:20,523 - INFO - 127.0.0.1 - - [25/Jun/2025 17:26:20] "GET /search_statistics HTTP/1.1" 200 -
+2025-06-25 17:32:04,417 - INFO - 127.0.0.1 - - [25/Jun/2025 17:32:04] "GET /search_statistics HTTP/1.1" 200 -
+2025-06-25 17:32:08,606 - INFO - Processing search for paris
+2025-06-25 17:32:08,899 - INFO - 127.0.0.1 - - [25/Jun/2025 17:32:08] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-06-25 17:36:42,411 - INFO - 127.0.0.1 - - [25/Jun/2025 17:36:42] "GET /search_statistics HTTP/1.1" 200 -
+2025-06-25 17:37:02,317 - INFO - Processing search for m
+2025-06-25 17:37:02,455 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\ProjectApp\TripMate\backend\app.py", line 37, in search_place
+    weather = get_weather(city)
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\ProjectApp\TripMate\backend\weather_module.py", line 10, in get_weather
+    raise Exception(f"OpenWeather API error: {res.get('message', 'Unknown error')}")
+Exception: OpenWeather API error: city not found
+
+2025-06-25 17:37:02,457 - INFO - 127.0.0.1 - - [25/Jun/2025 17:37:02] "[35m[1mGET /search_place?city=m HTTP/1.1[0m" 500 -
+2025-06-25 17:37:12,623 - INFO - Processing search for new york city
+2025-06-25 17:37:13,256 - INFO - 127.0.0.1 - - [25/Jun/2025 17:37:13] "GET /search_place?city=new+york+city HTTP/1.1" 200 -
+2025-06-25 17:37:26,598 - INFO - Processing search for new delhi
+2025-06-25 17:37:27,448 - INFO - 127.0.0.1 - - [25/Jun/2025 17:37:27] "GET /search_place?city=new+delhi HTTP/1.1" 200 -
+2025-06-25 17:40:44,562 - INFO - 127.0.0.1 - - [25/Jun/2025 17:40:44] "GET /search_statistics HTTP/1.1" 200 -
+2025-06-25 17:48:19,704 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp\\TripMate\\backend\\seasons_module.py', reloading
+2025-06-25 17:48:20,193 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-25 17:48:22,078 - WARNING -  * Debugger is active!
+2025-06-25 17:48:22,081 - INFO -  * Debugger PIN: 371-430-250
+2025-06-25 17:48:44,544 - INFO - 127.0.0.1 - - [25/Jun/2025 17:48:44] "GET /search_statistics HTTP/1.1" 200 -
+2025-06-25 18:06:56,339 - INFO - 127.0.0.1 - - [25/Jun/2025 18:06:56] "GET /search_statistics HTTP/1.1" 200 -
+2025-06-25 18:08:18,671 - INFO - 127.0.0.1 - - [25/Jun/2025 18:08:18] "[33mGET /chatbot?query=which+places+are+best+to+travel? HTTP/1.1[0m" 404 -
+2025-06-25 18:08:40,123 - INFO - 127.0.0.1 - - [25/Jun/2025 18:08:40] "[33mGET /chatbot?query=hi HTTP/1.1[0m" 404 -
+2025-06-25 18:09:29,278 - INFO - Processing search for paris
+2025-06-25 18:09:29,625 - INFO - 127.0.0.1 - - [25/Jun/2025 18:09:29] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-06-25 18:27:30,250 - INFO - 127.0.0.1 - - [25/Jun/2025 18:27:30] "GET /search_statistics HTTP/1.1" 200 -
+2025-06-25 18:30:54,105 - INFO - 127.0.0.1 - - [25/Jun/2025 18:30:54] "GET /search_statistics HTTP/1.1" 200 -
+2025-06-25 18:37:55,380 - INFO - Processing search for paris
+2025-06-25 18:37:55,893 - INFO - 127.0.0.1 - - [25/Jun/2025 18:37:55] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-06-25 18:43:32,497 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-06-25 18:43:32,927 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-25 18:43:38,793 - WARNING -  * Debugger is active!
+2025-06-25 18:43:38,795 - INFO -  * Debugger PIN: 371-430-250
+2025-06-25 18:43:54,206 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\flask\\app.py', reloading
+2025-06-25 18:43:54,236 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\flask\\sansio\\app.py', reloading
+2025-06-25 18:43:54,247 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\flask\\sansio\\scaffold.py', reloading
+2025-06-25 18:43:55,037 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-25 18:43:56,954 - WARNING -  * Debugger is active!
+2025-06-25 18:43:56,960 - INFO -  * Debugger PIN: 371-430-250
+2025-06-25 18:43:56,994 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\_pydatetime.py', reloading
+2025-06-25 18:43:58,105 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-25 18:43:59,876 - WARNING -  * Debugger is active!
+2025-06-25 18:43:59,880 - INFO -  * Debugger PIN: 371-430-250
+2025-06-25 18:44:54,917 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp\\TripMate\\backend\\app.py', reloading
+2025-06-25 18:44:54,953 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp\\TripMate\\backend\\app.py', reloading
+2025-06-25 18:44:55,144 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-25 18:44:57,237 - WARNING -  * Debugger is active!
+2025-06-25 18:44:57,239 - INFO -  * Debugger PIN: 371-430-250
+2025-06-25 18:46:18,921 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp\\TripMate\\backend\\app.py', reloading
+2025-06-25 18:46:18,957 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp\\TripMate\\backend\\app.py', reloading
+2025-06-25 18:46:18,958 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp\\TripMate\\backend\\app.py', reloading
+2025-06-25 18:46:19,802 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-25 18:46:21,811 - WARNING -  * Debugger is active!
+2025-06-25 18:46:21,815 - INFO -  * Debugger PIN: 371-430-250
+2025-06-25 19:03:05,518 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-25 19:03:05,520 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-25 19:03:05,542 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-25 19:03:08,463 - WARNING -  * Debugger is active!
+2025-06-25 19:03:08,512 - INFO -  * Debugger PIN: 371-430-250
+2025-06-25 19:03:42,922 - INFO - Processing search for paris
+2025-06-25 19:03:47,339 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 19:03:47,408 - INFO - 127.0.0.1 - - [25/Jun/2025 19:03:47] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-06-25 19:04:12,645 - INFO - 127.0.0.1 - - [25/Jun/2025 19:04:12] "[33mGET /chatbot?query=hi HTTP/1.1[0m" 404 -
+2025-06-25 19:05:22,371 - INFO - 127.0.0.1 - - [25/Jun/2025 19:05:22] "[33mGET /chatbot?query=hi HTTP/1.1[0m" 404 -
+2025-06-25 19:05:31,804 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-25 19:05:31,806 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-25 19:05:31,817 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-25 19:05:34,655 - WARNING -  * Debugger is active!
+2025-06-25 19:05:34,661 - INFO -  * Debugger PIN: 371-430-250
+2025-06-25 19:05:41,827 - INFO - 127.0.0.1 - - [25/Jun/2025 19:05:41] "[33mGET /chatbot?query=hi HTTP/1.1[0m" 404 -
+2025-07-01 19:03:30,059 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-01 19:03:30,061 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-01 19:03:30,120 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-01 19:03:32,167 - WARNING -  * Debugger is active!
+2025-07-01 19:03:32,170 - INFO -  * Debugger PIN: 371-430-250
+2025-07-01 19:04:02,285 - INFO - 127.0.0.1 - - [01/Jul/2025 19:04:02] "[33mGET /chatbot?query=hi HTTP/1.1[0m" 404 -
+2025-07-01 19:04:10,790 - INFO - Processing search for paris
+2025-07-01 19:04:16,161 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-01 19:04:16,197 - INFO - 127.0.0.1 - - [01/Jul/2025 19:04:16] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-07-01 19:18:50,547 - INFO - Processing search for paris
+2025-07-01 19:18:53,599 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-01 19:18:53,658 - INFO - 127.0.0.1 - - [01/Jul/2025 19:18:53] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-07-01 19:19:05,744 - INFO - 127.0.0.1 - - [01/Jul/2025 19:19:05] "[33mGET /chatbot?query=hi HTTP/1.1[0m" 404 -
+2025-07-01 19:26:15,602 - INFO - 127.0.0.1 - - [01/Jul/2025 19:26:15] "GET /search_statistics HTTP/1.1" 200 -
+2025-07-01 19:26:46,033 - INFO - 127.0.0.1 - - [01/Jul/2025 19:26:46] "[33mGET /chatbot?query=paris HTTP/1.1[0m" 404 -
+2025-07-01 19:28:55,864 - INFO - Processing search for paris
+2025-07-01 19:28:58,180 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-01 19:28:58,239 - INFO - 127.0.0.1 - - [01/Jul/2025 19:28:58] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-07-01 19:33:06,034 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\namespaces\\__init__.py', reloading
+2025-07-01 19:33:06,043 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\namespaces\\core.py', reloading
+2025-07-01 19:33:06,105 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\mixins\\pagination.py', reloading
+2025-07-01 19:33:06,126 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\mixins\\validator.py', reloading
+2025-07-01 19:33:06,160 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\mixins\\http.py', reloading
+2025-07-01 19:33:06,397 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\namespaces\\_shopping.py', reloading
+2025-07-01 19:33:06,445 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\client\\decorator.py', reloading
+2025-07-01 19:33:06,476 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\namespaces\\_travel.py', reloading
+2025-07-01 19:33:06,506 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\namespaces\\_reference_data.py', reloading
+2025-07-01 19:33:06,554 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\shopping\\_flight_offers_search.py', reloading
+2025-07-01 19:33:06,569 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\shopping\\_flight_offers.py', reloading
+2025-07-01 19:33:06,590 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\shopping\\_flight_destinations.py', reloading
+2025-07-01 19:33:06,602 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\amadeus\\shopping\\_flight_dates.py', reloading
+2025-07-01 19:33:07,532 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-01 19:33:11,365 - WARNING -  * Debugger is active!
+2025-07-01 19:33:11,369 - INFO -  * Debugger PIN: 371-430-250
+2025-07-01 19:37:44,768 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\_pytest\\compat.py', reloading
+2025-07-01 19:37:44,797 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\_pytest\\junitxml.py', reloading
+2025-07-01 19:37:45,773 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-01 19:37:48,845 - WARNING -  * Debugger is active!
+2025-07-01 19:37:48,851 - INFO -  * Debugger PIN: 371-430-250
+2025-07-01 19:41:13,366 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\logging\\__init__.py', reloading
+2025-07-01 19:41:14,093 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-01 19:41:17,354 - WARNING -  * Debugger is active!
+2025-07-01 19:41:17,358 - INFO -  * Debugger PIN: 371-430-250
+2025-07-01 19:41:22,262 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-01 19:41:25,491 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-01 19:41:25,495 - INFO - 127.0.0.1 - - [01/Jul/2025 19:41:25] "GET /chatbot?query=hi HTTP/1.1" 200 -
+2025-07-01 19:41:49,455 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-01 19:41:56,015 - INFO - 127.0.0.1 - - [01/Jul/2025 19:41:56] "GET /chatbot?query=flight+from+blr+to+paris+on+18th+july HTTP/1.1" 200 -
+2025-07-01 19:55:23,772 - INFO - 127.0.0.1 - - [01/Jul/2025 19:55:23] "GET /search_statistics HTTP/1.1" 200 -
+2025-07-01 19:55:30,016 - INFO - Processing search for paris
+2025-07-01 19:55:32,246 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-01 19:55:32,304 - INFO - 127.0.0.1 - - [01/Jul/2025 19:55:32] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-07-01 19:56:30,174 - INFO - 127.0.0.1 - - [01/Jul/2025 19:56:30] "GET /search_statistics HTTP/1.1" 200 -
+2025-07-01 19:56:35,358 - INFO - Processing search for paris
+2025-07-01 19:56:37,070 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-01 19:56:37,126 - INFO - 127.0.0.1 - - [01/Jul/2025 19:56:37] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-07-01 20:05:00,349 - INFO -  * Detected change in 'C:\\Users\\HP\\anaconda3\\Scripts\\conda-script.py', reloading
+2025-07-01 20:05:00,856 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-01 20:05:03,876 - WARNING -  * Debugger is active!
+2025-07-01 20:05:03,881 - INFO -  * Debugger PIN: 371-430-250
+2025-07-31 13:59:25,944 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-31 13:59:25,945 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-31 13:59:25,954 - INFO -  * Restarting with stat
+2025-07-31 13:59:27,156 - WARNING -  * Debugger is active!
+2025-07-31 13:59:27,159 - INFO -  * Debugger PIN: 102-747-895
+2025-07-31 14:01:13,200 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-31 14:01:13,200 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-31 14:01:13,202 - INFO -  * Restarting with stat
+2025-07-31 14:01:14,380 - WARNING -  * Debugger is active!
+2025-07-31 14:01:14,383 - INFO -  * Debugger PIN: 102-747-895
+2025-07-31 14:02:56,522 - INFO - 127.0.0.1 - - [31/Jul/2025 14:02:56] "GET /search_statistics HTTP/1.1" 200 -
+2025-07-31 14:04:27,730 - INFO - 127.0.0.1 - - [31/Jul/2025 14:04:27] "GET /search_statistics HTTP/1.1" 200 -
+2025-07-31 14:04:39,161 - INFO - 127.0.0.1 - - [31/Jul/2025 14:04:39] "GET /search_statistics HTTP/1.1" 200 -
+2025-07-31 14:11:00,219 - INFO - 127.0.0.1 - - [31/Jul/2025 14:11:00] "GET /search_statistics HTTP/1.1" 200 -
+2025-07-31 14:12:36,060 - INFO - 127.0.0.1 - - [31/Jul/2025 14:12:36] "GET /search_statistics HTTP/1.1" 200 -
+2025-07-31 14:14:56,762 - INFO - 127.0.0.1 - - [31/Jul/2025 14:14:56] "GET /search_statistics HTTP/1.1" 200 -
+2025-07-31 14:15:14,711 - INFO - Processing search for paris
+2025-07-31 14:15:17,373 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-31 14:15:17,433 - INFO - 127.0.0.1 - - [31/Jul/2025 14:15:17] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-07-31 14:15:28,972 - INFO - Processing search for new york city
+2025-07-31 14:15:30,988 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-31 14:15:31,012 - INFO - 127.0.0.1 - - [31/Jul/2025 14:15:31] "GET /search_place?city=new+york+city HTTP/1.1" 200 -
+2025-07-31 14:15:51,577 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-31 14:15:52,533 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-31 14:15:52,555 - INFO - 127.0.0.1 - - [31/Jul/2025 14:15:52] "GET /chatbot?query=hi HTTP/1.1" 200 -
+2025-07-31 14:16:23,997 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-31 14:16:25,301 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-31 14:16:25,307 - INFO - 127.0.0.1 - - [31/Jul/2025 14:16:25] "GET /chatbot?query=which+places+to+visit+in+paris? HTTP/1.1" 200 -
+2025-07-31 14:16:33,865 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-31 14:16:34,496 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-31 14:16:34,499 - INFO - 127.0.0.1 - - [31/Jul/2025 14:16:34] "GET /chatbot?query=hi HTTP/1.1" 200 -
+2025-08-01 22:46:24,060 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-01 22:46:24,062 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-01 22:46:24,062 - INFO -  * Restarting with stat
+2025-08-01 22:46:25,804 - WARNING -  * Debugger is active!
+2025-08-01 22:46:25,812 - INFO -  * Debugger PIN: 102-747-895
+2025-08-01 22:47:09,339 - INFO - 127.0.0.1 - - [01/Aug/2025 22:47:09] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-01 22:47:22,058 - INFO - Processing search for london
+2025-08-01 22:47:26,560 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-01 22:47:26,627 - INFO - 127.0.0.1 - - [01/Aug/2025 22:47:26] "GET /search_place?city=london HTTP/1.1" 200 -
+2025-08-01 22:47:48,650 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-01 22:47:50,958 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-01 22:47:50,960 - INFO - 127.0.0.1 - - [01/Aug/2025 22:47:50] "GET /chatbot?query=hello HTTP/1.1" 200 -
+2025-08-01 22:48:03,740 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-01 22:48:09,731 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-01 22:48:09,780 - INFO - 127.0.0.1 - - [01/Aug/2025 22:48:09] "GET /chatbot?query=how+are+you? HTTP/1.1" 200 -
+2025-08-02 09:10:22,016 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-02 09:10:22,017 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-02 09:10:22,021 - INFO -  * Restarting with stat
+2025-08-02 09:10:23,388 - WARNING -  * Debugger is active!
+2025-08-02 09:10:23,429 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 09:12:41,918 - INFO - 127.0.0.1 - - [02/Aug/2025 09:12:41] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-02 09:13:38,880 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 09:13:41,357 - INFO - 127.0.0.1 - - [02/Aug/2025 09:13:41] "GET /chatbot?query=flights+from+delhi+to+new+york+oct+20th+2025? HTTP/1.1" 200 -
+2025-08-02 09:17:18,492 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp_working\\Tripmate\\backend\\chatbot_module.py', reloading
+2025-08-02 09:17:18,703 - INFO -  * Restarting with stat
+2025-08-02 09:17:20,538 - WARNING -  * Debugger is active!
+2025-08-02 09:17:20,538 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 09:17:47,715 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 09:17:55,518 - INFO - 127.0.0.1 - - [02/Aug/2025 09:17:55] "GET /chatbot?query=flights+from+delhi+to+new+york+oct+20th+2025? HTTP/1.1" 200 -
+2025-08-02 09:19:50,358 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp_working\\Tripmate\\backend\\chatbot_module.py', reloading
+2025-08-02 09:19:50,506 - INFO -  * Restarting with stat
+2025-08-02 09:19:52,293 - WARNING -  * Debugger is active!
+2025-08-02 09:19:52,294 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 09:20:50,355 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp_working\\Tripmate\\backend\\chatbot_module.py', reloading
+2025-08-02 09:20:50,478 - INFO -  * Restarting with stat
+2025-08-02 09:20:52,273 - WARNING -  * Debugger is active!
+2025-08-02 09:20:52,281 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 09:21:19,993 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 09:21:29,201 - INFO - 127.0.0.1 - - [02/Aug/2025 09:21:29] "GET /chatbot?query=flights+from+delhi+to+new+york+oct+20th+2025? HTTP/1.1" 200 -
+2025-08-02 09:24:54,225 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp_working\\Tripmate\\backend\\chatbot_module.py', reloading
+2025-08-02 09:24:54,378 - INFO -  * Restarting with stat
+2025-08-02 09:24:56,376 - WARNING -  * Debugger is active!
+2025-08-02 09:24:56,380 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 09:26:09,551 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp_working\\Tripmate\\backend\\chatbot_module.py', reloading
+2025-08-02 09:26:09,684 - INFO -  * Restarting with stat
+2025-08-02 09:26:11,393 - WARNING -  * Debugger is active!
+2025-08-02 09:26:11,396 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 09:26:21,304 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 09:26:29,748 - INFO - 127.0.0.1 - - [02/Aug/2025 09:26:29] "GET /chatbot?query=flights+from+delhi+to+new+york+oct+20th+2025? HTTP/1.1" 200 -
+2025-08-02 09:27:50,030 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp_working\\Tripmate\\backend\\chatbot_module.py', reloading
+2025-08-02 09:27:50,198 - INFO -  * Restarting with stat
+2025-08-02 09:27:51,991 - WARNING -  * Debugger is active!
+2025-08-02 09:27:51,998 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 09:28:06,687 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 09:28:13,355 - INFO - 127.0.0.1 - - [02/Aug/2025 09:28:13] "GET /chatbot?query=flights+from+delhi+to+new+york+oct+20th+2025? HTTP/1.1" 200 -
+2025-08-02 09:28:54,531 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 09:28:55,297 - INFO - 127.0.0.1 - - [02/Aug/2025 09:28:55] "GET /chatbot?query=Hotels+in+bangalore+check+in+7th+august+2025+and+check+out+9th+august+2025 HTTP/1.1" 200 -
+2025-08-02 09:29:42,432 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 09:29:43,499 - INFO - 127.0.0.1 - - [02/Aug/2025 09:29:43] "GET /chatbot?query=Hotels+in+Bengaluru+check+in+7th+august+2025+and+check+out+9th+august+2025 HTTP/1.1" 200 -
+2025-08-02 09:32:49,208 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp_working\\Tripmate\\backend\\chatbot_module.py', reloading
+2025-08-02 09:32:49,372 - INFO -  * Restarting with stat
+2025-08-02 09:32:51,139 - WARNING -  * Debugger is active!
+2025-08-02 09:32:51,150 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 09:33:16,212 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp_working\\Tripmate\\backend\\chatbot_module.py', reloading
+2025-08-02 09:33:16,509 - INFO -  * Restarting with stat
+2025-08-02 09:33:18,548 - WARNING -  * Debugger is active!
+2025-08-02 09:33:18,558 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 09:33:22,927 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 09:33:25,377 - INFO - 127.0.0.1 - - [02/Aug/2025 09:33:25] "GET /chatbot?query=Hotels+in+bangalore+check+in+7th+august+2025+and+check+out+9th+august+2025 HTTP/1.1" 200 -
+2025-08-02 09:33:47,267 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 09:33:48,974 - INFO - 127.0.0.1 - - [02/Aug/2025 09:33:48] "GET /chatbot?query=Hotels+in+Bengaluru+check+in+7th+august+2025+and+check+out+9th+august+2025 HTTP/1.1" 200 -
+2025-08-02 09:34:30,684 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp_working\\Tripmate\\backend\\chatbot_module.py', reloading
+2025-08-02 09:34:30,878 - INFO -  * Restarting with stat
+2025-08-02 09:34:32,676 - WARNING -  * Debugger is active!
+2025-08-02 09:34:32,680 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 09:34:38,952 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 09:34:39,009 - INFO - 127.0.0.1 - - [02/Aug/2025 09:34:39] "GET /chatbot?query=Hotels+in+Bengaluru+check+in+7th+august+2025+and+check+out+9th+august+2025 HTTP/1.1" 200 -
+2025-08-02 09:36:31,086 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp_working\\Tripmate\\backend\\chatbot_module.py', reloading
+2025-08-02 09:36:31,268 - INFO -  * Restarting with stat
+2025-08-02 09:36:33,061 - WARNING -  * Debugger is active!
+2025-08-02 09:36:33,066 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 09:36:38,118 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 09:36:38,176 - INFO - 127.0.0.1 - - [02/Aug/2025 09:36:38] "GET /chatbot?query=Hotels+in+Bengaluru+check+in+7th+august+2025+and+check+out+9th+august+2025 HTTP/1.1" 200 -
+2025-08-02 09:36:52,747 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 09:36:55,111 - INFO - 127.0.0.1 - - [02/Aug/2025 09:36:55] "GET /chatbot?query=flights+from+delhi+to+new+york+oct+20th+2025? HTTP/1.1" 200 -
+2025-08-02 09:37:29,200 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\ProjectApp_working\\Tripmate\\backend\\chatbot_module.py', reloading
+2025-08-02 09:37:29,395 - INFO -  * Restarting with stat
+2025-08-02 09:37:31,316 - WARNING -  * Debugger is active!
+2025-08-02 09:37:31,321 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 09:37:39,183 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 09:37:46,277 - INFO - 127.0.0.1 - - [02/Aug/2025 09:37:46] "GET /chatbot?query=flights+from+delhi+to+new+york+oct+20th+2025? HTTP/1.1" 200 -
+2025-08-02 09:38:56,251 - INFO - Processing search for paris
+2025-08-02 09:38:57,757 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 09:38:57,792 - INFO - 127.0.0.1 - - [02/Aug/2025 09:38:57] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-02 09:41:36,734 - INFO - 127.0.0.1 - - [02/Aug/2025 09:41:36] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-02 09:42:44,305 - INFO - 127.0.0.1 - - [02/Aug/2025 09:42:44] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-02 09:59:25,698 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-02 09:59:25,698 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-02 09:59:25,698 - INFO -  * Restarting with stat
+2025-08-02 09:59:27,428 - WARNING -  * Debugger is active!
+2025-08-02 09:59:27,428 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 10:00:21,432 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-02 10:00:21,432 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-02 10:00:21,432 - INFO -  * Restarting with stat
+2025-08-02 10:00:23,323 - WARNING -  * Debugger is active!
+2025-08-02 10:00:23,326 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 10:00:33,894 - INFO - 127.0.0.1 - - [02/Aug/2025 10:00:33] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-02 10:01:00,558 - INFO - Processing search for paris
+2025-08-02 10:01:03,101 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 10:01:03,175 - INFO - 127.0.0.1 - - [02/Aug/2025 10:01:03] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-02 10:01:14,418 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 10:01:17,150 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 10:01:17,155 - INFO - 127.0.0.1 - - [02/Aug/2025 10:01:17] "GET /chatbot?query=hi HTTP/1.1" 200 -
+2025-08-02 10:05:35,177 - INFO - 127.0.0.1 - - [02/Aug/2025 10:05:35] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-02 10:07:34,508 - INFO - 127.0.0.1 - - [02/Aug/2025 10:07:34] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-02 10:10:17,022 - INFO - 127.0.0.1 - - [02/Aug/2025 10:10:17] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-02 10:13:58,222 - INFO - Processing search for paris
+2025-08-02 10:13:59,356 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 10:13:59,377 - INFO - 127.0.0.1 - - [02/Aug/2025 10:13:59] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-02 10:14:17,786 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 10:14:19,219 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 10:14:19,223 - INFO - 127.0.0.1 - - [02/Aug/2025 10:14:19] "GET /chatbot?query=hi HTTP/1.1" 200 -
+2025-08-02 10:14:35,095 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 10:14:42,880 - INFO - 127.0.0.1 - - [02/Aug/2025 10:14:42] "GET /chatbot?query=flights+to+blrfrom+nyc+20th+oct+2025 HTTP/1.1" 200 -
+2025-08-02 10:16:40,318 - INFO - Processing search for new york city
+2025-08-02 10:16:42,348 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 10:16:42,414 - INFO - 127.0.0.1 - - [02/Aug/2025 10:16:42] "GET /search_place?city=new+york+city HTTP/1.1" 200 -
+2025-08-02 10:44:47,186 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-02 10:44:47,188 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-02 10:44:47,191 - INFO -  * Restarting with stat
+2025-08-02 10:44:49,543 - WARNING -  * Debugger is active!
+2025-08-02 10:44:49,549 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 10:45:11,194 - INFO - 127.0.0.1 - - [02/Aug/2025 10:45:11] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-02 10:45:20,691 - INFO - Processing search for paris
+2025-08-02 10:45:23,248 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 10:45:23,293 - INFO - 127.0.0.1 - - [02/Aug/2025 10:45:23] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-02 10:53:14,642 - INFO - 127.0.0.1 - - [02/Aug/2025 10:53:14] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-02 10:53:24,045 - INFO - Processing search for paris
+2025-08-02 10:53:25,863 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 10:53:25,884 - INFO - 127.0.0.1 - - [02/Aug/2025 10:53:25] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-02 10:55:32,021 - INFO - 127.0.0.1 - - [02/Aug/2025 10:55:32] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-02 10:55:38,898 - INFO - Processing search for paris
+2025-08-02 10:55:40,212 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 10:55:40,266 - INFO - 127.0.0.1 - - [02/Aug/2025 10:55:40] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-02 10:58:44,865 - INFO - 127.0.0.1 - - [02/Aug/2025 10:58:44] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-02 10:59:56,162 - INFO - 127.0.0.1 - - [02/Aug/2025 10:59:56] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-02 11:04:10,204 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-02 11:04:10,205 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-02 11:04:10,208 - INFO -  * Restarting with stat
+2025-08-02 11:04:11,496 - WARNING -  * Debugger is active!
+2025-08-02 11:04:11,500 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 11:04:20,730 - INFO - 127.0.0.1 - - [02/Aug/2025 11:04:20] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-02 11:05:07,034 - INFO - Processing search for paris
+2025-08-02 11:05:09,676 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 11:05:09,709 - INFO - 127.0.0.1 - - [02/Aug/2025 11:05:09] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-02 11:05:49,128 - INFO - 127.0.0.1 - - [02/Aug/2025 11:05:49] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-02 11:06:22,440 - INFO - Processing search for london
+2025-08-02 11:06:23,708 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 11:06:23,763 - INFO - 127.0.0.1 - - [02/Aug/2025 11:06:23] "GET /search_place?city=london HTTP/1.1" 200 -
+2025-08-02 11:06:40,878 - INFO - Processing search for paris
+2025-08-02 11:06:42,007 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 11:06:42,025 - INFO - 127.0.0.1 - - [02/Aug/2025 11:06:42] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-02 11:08:44,601 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\tripmate_app\\ProjectApp_working - Copy\\TripMate\\backend\\weather_module.py', reloading
+2025-08-02 11:08:44,741 - INFO -  * Restarting with stat
+2025-08-02 11:08:46,055 - WARNING -  * Debugger is active!
+2025-08-02 11:08:46,058 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 11:08:48,862 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\tripmate_app\\ProjectApp_working - Copy\\TripMate\\backend\\weather_module.py', reloading
+2025-08-02 11:08:48,978 - INFO -  * Restarting with stat
+2025-08-02 11:08:50,339 - WARNING -  * Debugger is active!
+2025-08-02 11:08:50,342 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 11:08:52,171 - INFO - Processing search for paris
+2025-08-02 11:08:54,198 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 11:08:54,265 - INFO - 127.0.0.1 - - [02/Aug/2025 11:08:54] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-02 11:18:48,540 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-02 11:18:48,541 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-02 11:18:48,542 - INFO -  * Restarting with stat
+2025-08-02 11:18:49,832 - WARNING -  * Debugger is active!
+2025-08-02 11:18:49,835 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 11:19:02,935 - INFO - 127.0.0.1 - - [02/Aug/2025 11:19:02] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-02 11:25:16,301 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-02 11:25:16,303 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-02 11:25:16,304 - INFO -  * Restarting with stat
+2025-08-02 11:25:17,585 - WARNING -  * Debugger is active!
+2025-08-02 11:25:17,588 - INFO -  * Debugger PIN: 102-747-895
+2025-08-02 11:25:34,353 - INFO - 127.0.0.1 - - [02/Aug/2025 11:25:34] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-02 11:25:39,285 - INFO - Processing search for paris
+2025-08-02 11:25:40,988 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 11:25:41,041 - INFO - 127.0.0.1 - - [02/Aug/2025 11:25:41] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-02 11:25:46,622 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 11:25:48,348 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 11:25:48,352 - INFO - 127.0.0.1 - - [02/Aug/2025 11:25:48] "GET /chatbot?query=hi HTTP/1.1" 200 -
+2025-08-08 08:36:38,378 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-08 08:36:38,378 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-08 08:36:38,382 - INFO -  * Restarting with stat
+2025-08-08 08:36:40,506 - WARNING -  * Debugger is active!
+2025-08-08 08:36:40,516 - INFO -  * Debugger PIN: 102-747-895
+2025-08-08 08:36:56,558 - INFO - 127.0.0.1 - - [08/Aug/2025 08:36:56] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-08 08:37:08,854 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 08:37:10,493 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 08:37:10,497 - INFO - 127.0.0.1 - - [08/Aug/2025 08:37:10] "GET /chatbot?query=hi HTTP/1.1" 200 -
+2025-08-08 08:37:41,381 - INFO - Processing search for london
+2025-08-08 08:37:43,815 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 08:37:43,875 - INFO - 127.0.0.1 - - [08/Aug/2025 08:37:43] "GET /search_place?city=london HTTP/1.1" 200 -
+2025-08-08 08:37:58,878 - INFO - Processing search for nyc
+2025-08-08 08:37:59,147 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Desktop august 2025\tripmate_app\ProjectApp_working - Best app - Copy\Tripmate\backend\app.py", line 77, in search_place
+    weather = get_weather(city)
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\Desktop august 2025\tripmate_app\ProjectApp_working - Best app - Copy\Tripmate\backend\weather_module.py", line 10, in get_weather
+    raise Exception(f"OpenWeather API error: {res.get('message', 'Unknown error')}")
+Exception: OpenWeather API error: city not found
+
+2025-08-08 08:37:59,148 - INFO - 127.0.0.1 - - [08/Aug/2025 08:37:59] "[35m[1mGET /search_place?city=nyc HTTP/1.1[0m" 500 -
+2025-08-08 08:38:05,312 - INFO - Processing search for new york city
+2025-08-08 08:38:07,274 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 08:38:07,292 - INFO - 127.0.0.1 - - [08/Aug/2025 08:38:07] "GET /search_place?city=new+york+city HTTP/1.1" 200 -
+2025-08-08 08:45:56,456 - INFO - 127.0.0.1 - - [08/Aug/2025 08:45:56] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-08 08:46:10,499 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 08:46:11,562 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 08:46:11,564 - INFO - 127.0.0.1 - - [08/Aug/2025 08:46:11] "GET /chatbot?query=hi HTTP/1.1" 200 -
+2025-08-08 08:46:46,238 - INFO - Processing search for paris
+2025-08-08 08:46:47,541 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 08:46:47,597 - INFO - 127.0.0.1 - - [08/Aug/2025 08:46:47] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-08 08:51:36,770 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\Desktop august 2025\\tripmate_app\\ProjectApp_working - Best app - Copy\\Tripmate\\backend\\weather_module.py', reloading
+2025-08-08 08:51:36,955 - INFO -  * Restarting with stat
+2025-08-08 08:51:38,250 - WARNING -  * Debugger is active!
+2025-08-08 08:51:38,255 - INFO -  * Debugger PIN: 102-747-895
+2025-08-08 08:51:44,685 - INFO - Processing search for paris
+2025-08-08 08:51:45,299 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Desktop august 2025\tripmate_app\ProjectApp_working - Best app - Copy\Tripmate\backend\app.py", line 77, in search_place
+    weather = get_weather(city)
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\Desktop august 2025\tripmate_app\ProjectApp_working - Best app - Copy\Tripmate\backend\weather_module.py", line 15, in get_weather
+    today = one["daily"][0]
+            ~~~^^^^^^^^^
+KeyError: 'daily'
+
+2025-08-08 08:51:45,300 - INFO - 127.0.0.1 - - [08/Aug/2025 08:51:45] "[35m[1mGET /search_place?city=paris HTTP/1.1[0m" 500 -
+2025-08-08 08:56:54,255 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\Desktop august 2025\\tripmate_app\\ProjectApp_working - Best app - Copy\\Tripmate\\backend\\weather_module.py', reloading
+2025-08-08 08:56:54,351 - INFO -  * Restarting with stat
+2025-08-08 08:56:55,874 - WARNING -  * Debugger is active!
+2025-08-08 08:56:55,878 - INFO -  * Debugger PIN: 102-747-895
+2025-08-08 08:58:29,923 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\Desktop august 2025\\tripmate_app\\ProjectApp_working - Best app - Copy\\Tripmate\\backend\\app.py', reloading
+2025-08-08 08:58:30,017 - INFO -  * Restarting with stat
+2025-08-08 08:58:31,409 - WARNING -  * Debugger is active!
+2025-08-08 08:58:31,414 - INFO -  * Debugger PIN: 102-747-895
+2025-08-08 08:58:33,553 - INFO - Processing search for paris
+2025-08-08 08:58:36,160 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 08:58:36,235 - INFO - 127.0.0.1 - - [08/Aug/2025 08:58:36] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-08 08:59:43,945 - INFO - Processing search for london
+2025-08-08 08:59:47,786 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 08:59:47,806 - INFO - 127.0.0.1 - - [08/Aug/2025 08:59:47] "GET /search_place?city=london HTTP/1.1" 200 -
+2025-08-08 09:00:11,996 - INFO - Processing search for singapore
+2025-08-08 09:00:16,008 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 09:00:16,062 - INFO - 127.0.0.1 - - [08/Aug/2025 09:00:16] "GET /search_place?city=singapore HTTP/1.1" 200 -
+2025-08-08 09:00:41,349 - INFO - Processing search for new york city
+2025-08-08 09:00:45,281 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 09:00:45,338 - INFO - 127.0.0.1 - - [08/Aug/2025 09:00:45] "GET /search_place?city=new+york+city HTTP/1.1" 200 -
+2025-08-08 11:01:03,349 - INFO - 127.0.0.1 - - [08/Aug/2025 11:01:03] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-08 11:51:26,429 - INFO - Processing search for paris
+2025-08-08 11:51:29,177 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 11:51:29,210 - INFO - 127.0.0.1 - - [08/Aug/2025 11:51:29] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-08 11:53:49,521 - INFO - 127.0.0.1 - - [08/Aug/2025 11:53:49] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-08 11:55:04,564 - INFO - Processing search for paris
+2025-08-08 11:55:08,155 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 11:55:08,184 - INFO - 127.0.0.1 - - [08/Aug/2025 11:55:08] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-08 11:55:46,004 - INFO - Processing search for new york city
+2025-08-08 11:55:48,705 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 11:55:48,761 - INFO - 127.0.0.1 - - [08/Aug/2025 11:55:48] "GET /search_place?city=new+york+city HTTP/1.1" 200 -
+2025-08-08 11:56:08,000 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 11:56:10,817 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 11:56:10,820 - INFO - 127.0.0.1 - - [08/Aug/2025 11:56:10] "GET /chatbot?query=hi HTTP/1.1" 200 -
+2025-08-08 11:56:38,166 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 11:56:39,903 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 11:56:39,905 - INFO - 127.0.0.1 - - [08/Aug/2025 11:56:39] "GET /chatbot?query=places+to+visit+in+paris HTTP/1.1" 200 -
+2025-08-08 11:56:57,827 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 11:56:59,045 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 11:56:59,048 - INFO - 127.0.0.1 - - [08/Aug/2025 11:56:59] "GET /chatbot?query=why+is+eiffel+tower+famous? HTTP/1.1" 200 -
+2025-08-08 11:57:23,422 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 11:57:27,028 - INFO - 127.0.0.1 - - [08/Aug/2025 11:57:27] "GET /chatbot?query=flights+from+bangalore+to+london+on+18th+august+2025 HTTP/1.1" 200 -
+2025-08-08 11:57:46,931 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 11:57:48,095 - INFO - 127.0.0.1 - - [08/Aug/2025 11:57:48] "GET /chatbot?query=flights+from+new+delhi+to+london+on+18th+august+2025 HTTP/1.1" 200 -
+2025-08-08 12:02:03,739 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\Desktop august 2025\\tripmate_app\\ProjectApp_working - Best app - Copy\\Tripmate\\backend\\chatbot_module.py', reloading
+2025-08-08 12:02:04,327 - INFO -  * Restarting with stat
+2025-08-08 12:02:07,907 - WARNING -  * Debugger is active!
+2025-08-08 12:02:07,912 - INFO -  * Debugger PIN: 102-747-895
+2025-08-08 12:02:51,521 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\Desktop august 2025\\tripmate_app\\ProjectApp_working - Best app - Copy\\Tripmate\\backend\\chatbot_module.py', reloading
+2025-08-08 12:02:51,668 - INFO -  * Restarting with stat
+2025-08-08 12:02:53,513 - WARNING -  * Debugger is active!
+2025-08-08 12:02:53,518 - INFO -  * Debugger PIN: 102-747-895
+2025-08-08 12:05:30,844 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\Desktop august 2025\\tripmate_app\\ProjectApp_working - Best app - Copy\\Tripmate\\backend\\chatbot_module.py', reloading
+2025-08-08 12:05:30,974 - INFO -  * Restarting with stat
+2025-08-08 12:05:32,690 - WARNING -  * Debugger is active!
+2025-08-08 12:05:32,690 - INFO -  * Debugger PIN: 102-747-895
+2025-08-08 12:07:03,887 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\Desktop august 2025\\tripmate_app\\ProjectApp_working - Best app - Copy\\Tripmate\\backend\\chatbot_module.py', reloading
+2025-08-08 12:07:04,023 - INFO -  * Restarting with stat
+2025-08-08 12:07:05,942 - WARNING -  * Debugger is active!
+2025-08-08 12:07:05,948 - INFO -  * Debugger PIN: 102-747-895
+2025-08-08 12:07:24,377 - INFO -  * Detected change in 'C:\\Users\\HP\\Desktop\\Desktop august 2025\\tripmate_app\\ProjectApp_working - Best app - Copy\\Tripmate\\backend\\chatbot_module.py', reloading
+2025-08-08 12:07:24,500 - INFO -  * Restarting with stat
+2025-08-08 12:07:26,190 - WARNING -  * Debugger is active!
+2025-08-08 12:07:26,190 - INFO -  * Debugger PIN: 102-747-895
+2025-08-08 12:07:31,983 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:07:35,102 - INFO - 127.0.0.1 - - [08/Aug/2025 12:07:35] "GET /chatbot?query=flights+from+bangalore+to+london+on+18th+august+2025 HTTP/1.1" 200 -
+2025-08-08 12:07:53,217 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-08 12:07:53,217 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-08 12:07:53,222 - INFO -  * Restarting with stat
+2025-08-08 12:07:55,025 - WARNING -  * Debugger is active!
+2025-08-08 12:07:55,029 - INFO -  * Debugger PIN: 102-747-895
+2025-08-08 12:07:59,146 - INFO - 127.0.0.1 - - [08/Aug/2025 12:07:59] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-08 12:08:24,751 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:08:27,696 - INFO - 127.0.0.1 - - [08/Aug/2025 12:08:27] "GET /chatbot?query=flights+from+bangalore+to+london+on+18th+august+2025 HTTP/1.1" 200 -
+2025-08-08 12:09:18,075 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:09:24,341 - INFO - 127.0.0.1 - - [08/Aug/2025 12:09:24] "GET /chatbot?query=flights+from+Bengaluru+to+london+on+18th+august+2025 HTTP/1.1" 200 -
+2025-08-08 12:09:47,206 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:09:52,156 - INFO - 127.0.0.1 - - [08/Aug/2025 12:09:52] "GET /chatbot?query=flights+from+paris+to+london+on+18th+august+2025 HTTP/1.1" 200 -
+2025-08-08 12:10:09,485 - INFO - Processing search for singapore
+2025-08-08 12:10:12,140 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:10:12,200 - INFO - 127.0.0.1 - - [08/Aug/2025 12:10:12] "GET /search_place?city=singapore HTTP/1.1" 200 -
+2025-08-08 12:10:47,558 - INFO - 127.0.0.1 - - [08/Aug/2025 12:10:47] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-08 12:11:42,878 - INFO - Processing search for paris
+2025-08-08 12:11:45,024 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:11:45,086 - INFO - 127.0.0.1 - - [08/Aug/2025 12:11:45] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-08 12:12:09,317 - INFO - Processing search for new york city
+2025-08-08 12:12:11,742 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:12:11,804 - INFO - 127.0.0.1 - - [08/Aug/2025 12:12:11] "GET /search_place?city=new+york+city HTTP/1.1" 200 -
+2025-08-08 12:12:29,354 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:12:30,734 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:12:30,760 - INFO - 127.0.0.1 - - [08/Aug/2025 12:12:30] "GET /chatbot?query=hi HTTP/1.1" 200 -
+2025-08-08 12:12:42,167 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:12:44,336 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:12:44,339 - INFO - 127.0.0.1 - - [08/Aug/2025 12:12:44] "GET /chatbot?query=places+to+visit+in+paris HTTP/1.1" 200 -
+2025-08-08 12:13:02,915 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:13:04,276 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:13:04,284 - INFO - 127.0.0.1 - - [08/Aug/2025 12:13:04] "GET /chatbot?query=why+is+eiffel+tower+famous? HTTP/1.1" 200 -
+2025-08-08 12:13:34,175 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:13:35,396 - INFO - 127.0.0.1 - - [08/Aug/2025 12:13:35] "GET /chatbot?query=flights+from+new+delhi+to+london+on+18th+august+2025 HTTP/1.1" 200 -
+2025-08-08 12:13:52,608 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:13:58,268 - INFO - 127.0.0.1 - - [08/Aug/2025 12:13:58] "GET /chatbot?query=flights+from+delhi+to+london+on+18th+august+2025 HTTP/1.1" 200 -
+2025-08-08 12:15:01,100 - INFO - 127.0.0.1 - - [08/Aug/2025 12:15:01] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-08 12:28:44,665 - INFO - 127.0.0.1 - - [08/Aug/2025 12:28:44] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-08 12:32:52,408 - INFO - Processing search for paris
+2025-08-08 12:33:10,565 - ERROR - Search error for paris: Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='api.openweathermap.org', port=80): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Desktop august 2025\tripmate_app\ProjectApp_working - Best app - Copy\Tripmate\backend\app.py", line 77, in search_place
+    weather = get_weather(city)
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\Desktop august 2025\tripmate_app\ProjectApp_working - Best app - Copy\Tripmate\backend\weather_module.py", line 22, in get_weather
+    g = requests.get(
+        ^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='api.openweathermap.org', port=80): Read timed out. (read timeout=10)
+
+2025-08-08 12:33:10,573 - INFO - 127.0.0.1 - - [08/Aug/2025 12:33:10] "[35m[1mGET /search_place?city=paris HTTP/1.1[0m" 500 -
+2025-08-08 12:34:48,123 - INFO - Processing search for paris
+2025-08-08 12:34:52,328 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:34:52,346 - INFO - 127.0.0.1 - - [08/Aug/2025 12:34:52] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-08 12:35:41,676 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-08 12:35:41,677 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-08 12:35:41,683 - INFO -  * Restarting with stat
+2025-08-08 12:35:42,874 - WARNING -  * Debugger is active!
+2025-08-08 12:35:42,878 - INFO -  * Debugger PIN: 102-747-895
+2025-08-08 12:35:50,340 - INFO - 127.0.0.1 - - [08/Aug/2025 12:35:50] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-08 12:36:53,949 - INFO - Processing search for paris
+2025-08-08 12:36:56,798 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:36:56,816 - INFO - 127.0.0.1 - - [08/Aug/2025 12:36:56] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-08 12:37:21,925 - INFO - Processing search for new york city
+2025-08-08 12:37:24,409 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:37:24,459 - INFO - 127.0.0.1 - - [08/Aug/2025 12:37:24] "GET /search_place?city=new+york+city HTTP/1.1" 200 -
+2025-08-08 12:37:34,562 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:37:35,522 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:37:35,523 - INFO - 127.0.0.1 - - [08/Aug/2025 12:37:35] "GET /chatbot?query=hi HTTP/1.1" 200 -
+2025-08-08 12:37:56,808 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:37:58,412 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:37:58,424 - INFO - 127.0.0.1 - - [08/Aug/2025 12:37:58] "GET /chatbot?query=places+to+visit+in+paris HTTP/1.1" 200 -
+2025-08-08 12:38:12,152 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:38:13,284 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:38:13,289 - INFO - 127.0.0.1 - - [08/Aug/2025 12:38:13] "GET /chatbot?query=why+is+eiffel+tower+famous? HTTP/1.1" 200 -
+2025-08-08 12:38:32,612 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 12:38:40,631 - INFO - 127.0.0.1 - - [08/Aug/2025 12:38:40] "GET /chatbot?query=flights+from+london+to+paris+at+18th+august+2025 HTTP/1.1" 200 -
+2025-08-08 12:39:55,804 - INFO - 127.0.0.1 - - [08/Aug/2025 12:39:55] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-08 12:43:27,220 - INFO - 127.0.0.1 - - [08/Aug/2025 12:43:27] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-08 21:15:47,443 - INFO - Processing search for paris
+2025-08-08 21:15:50,473 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 21:15:50,612 - INFO - 127.0.0.1 - - [08/Aug/2025 21:15:50] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-08 21:16:12,110 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 21:16:13,115 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 21:16:13,118 - INFO - 127.0.0.1 - - [08/Aug/2025 21:16:13] "GET /chatbot?query=hi HTTP/1.1" 200 -
+2025-08-08 22:33:31,715 - INFO - 127.0.0.1 - - [08/Aug/2025 22:33:31] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-08 22:34:43,042 - INFO - Processing search for paris
+2025-08-08 22:34:58,255 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:34:58,301 - INFO - 127.0.0.1 - - [08/Aug/2025 22:34:58] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-08 22:35:39,149 - INFO - Processing search for new york city
+2025-08-08 22:35:41,946 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:35:41,966 - INFO - 127.0.0.1 - - [08/Aug/2025 22:35:41] "GET /search_place?city=new+york+city HTTP/1.1" 200 -
+2025-08-08 22:36:02,976 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-08 22:36:02,977 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-08 22:36:02,980 - INFO -  * Restarting with stat
+2025-08-08 22:36:04,505 - WARNING -  * Debugger is active!
+2025-08-08 22:36:04,511 - INFO -  * Debugger PIN: 102-747-895
+2025-08-08 22:36:09,241 - INFO - 127.0.0.1 - - [08/Aug/2025 22:36:09] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-08 22:39:28,558 - INFO - Processing search for paris
+2025-08-08 22:39:37,645 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:39:37,681 - INFO - 127.0.0.1 - - [08/Aug/2025 22:39:37] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-08 22:39:54,609 - INFO - Processing search for paris
+2025-08-08 22:39:56,995 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:39:57,049 - INFO - 127.0.0.1 - - [08/Aug/2025 22:39:57] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-08 22:45:07,439 - INFO - 127.0.0.1 - - [08/Aug/2025 22:45:07] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-08 22:45:51,710 - INFO - Processing search for paris
+2025-08-08 22:45:56,359 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:45:56,381 - INFO - 127.0.0.1 - - [08/Aug/2025 22:45:56] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-08 22:46:12,051 - INFO - Processing search for new york city
+2025-08-08 22:46:15,260 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:46:15,281 - INFO - 127.0.0.1 - - [08/Aug/2025 22:46:15] "GET /search_place?city=new+york+city HTTP/1.1" 200 -
+2025-08-08 22:46:23,780 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:46:26,195 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:46:26,220 - INFO - 127.0.0.1 - - [08/Aug/2025 22:46:26] "GET /chatbot?query=hi HTTP/1.1" 200 -
+2025-08-08 22:46:43,764 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:46:45,197 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:46:45,203 - INFO - 127.0.0.1 - - [08/Aug/2025 22:46:45] "GET /chatbot?query=places+to+visit+in+paris HTTP/1.1" 200 -
+2025-08-08 22:47:01,255 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:47:02,710 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:47:02,713 - INFO - 127.0.0.1 - - [08/Aug/2025 22:47:02] "GET /chatbot?query=why+eiffel+tower+is+famous? HTTP/1.1" 200 -
+2025-08-08 22:47:57,639 - INFO - 127.0.0.1 - - [08/Aug/2025 22:47:57] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-08 22:48:53,986 - INFO - 127.0.0.1 - - [08/Aug/2025 22:48:53] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-08 22:49:17,152 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:49:21,017 - INFO - 127.0.0.1 - - [08/Aug/2025 22:49:21] "GET /chatbot?query=flights+from+blr+to+jfk+at+18th+august+2025 HTTP/1.1" 200 -
+2025-08-08 22:50:55,013 - INFO - 127.0.0.1 - - [08/Aug/2025 22:50:55] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-08 22:51:50,979 - INFO - Processing search for paris
+2025-08-08 22:51:55,959 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:51:55,978 - INFO - 127.0.0.1 - - [08/Aug/2025 22:51:55] "GET /search_place?city=paris HTTP/1.1" 200 -
+2025-08-08 22:52:06,820 - INFO - Processing search for new york city
+2025-08-08 22:52:11,850 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:52:11,879 - INFO - 127.0.0.1 - - [08/Aug/2025 22:52:11] "GET /search_place?city=new+york+city HTTP/1.1" 200 -
+2025-08-08 22:52:32,729 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:52:33,312 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:52:33,320 - INFO - 127.0.0.1 - - [08/Aug/2025 22:52:33] "GET /chatbot?query=hi HTTP/1.1" 200 -
+2025-08-08 22:52:49,593 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:52:51,933 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:52:51,947 - INFO - 127.0.0.1 - - [08/Aug/2025 22:52:51] "GET /chatbot?query=places+to+visit+in+paris HTTP/1.1" 200 -
+2025-08-08 22:53:07,553 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:53:08,879 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:53:08,895 - INFO - 127.0.0.1 - - [08/Aug/2025 22:53:08] "GET /chatbot?query=why+is+eiffel+tower+famous? HTTP/1.1" 200 -
+2025-08-08 22:53:48,854 - INFO - 127.0.0.1 - - [08/Aug/2025 22:53:48] "GET /search_statistics HTTP/1.1" 200 -
+2025-08-08 22:54:21,474 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:54:29,861 - INFO - 127.0.0.1 - - [08/Aug/2025 22:54:29] "GET /chatbot?query=flights+from+mumbai+to+london+at+18th+august+2025 HTTP/1.1" 200 -
