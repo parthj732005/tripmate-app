@@ -1,5 +1,3 @@
-Here’s the complete `README.md` you can copy directly into your GitHub repo:
-
 ---
 
 # TripMate 🌍✈️
@@ -12,7 +10,22 @@ Here’s the complete `README.md` you can copy directly into your GitHub repo:
 * ✈️ **Flight search**
 * 📈 **Trending destinations**
 
-Built for **Zense Recruitment 2025** and as a personal portfolio project.
+---
+
+## 📋 Prerequisites
+
+Before running TripMate, install:
+
+* **Python 3.9+** → [Download](https://www.python.org/downloads/)
+* **Java JDK 17+** → [Download](https://adoptium.net/)
+* **JavaFX SDK** (same version as your JDK) → [Download](https://openjfx.io/)
+* **Git** → [Download](https://git-scm.com/)
+* API keys for:
+
+  * OpenWeather (weather data)
+  * Flight API (e.g., Amadeus)
+  * Image API (Unsplash/Pexels)
+    Store them in `config/api_keys.json` (see `api_keys_example.json` in repo for format).
 
 ---
 
@@ -21,18 +34,18 @@ Built for **Zense Recruitment 2025** and as a personal portfolio project.
 ```
 TripMate/
 ├── backend/         # Python Flask server & APIs
-│   ├── app.py                # Main Flask app entry
-│   ├── chatbot_module.py     # AI chatbot logic
-│   ├── db_module.py          # Database handling
-│   ├── gallery_module.py     # Image fetching
-│   ├── seasons_module.py     # Seasonal/best month info
-│   ├── weather_module.py     # Weather API integration
-│   └── database/             # DB files
+│   ├── app.py
+│   ├── chatbot_module.py
+│   ├── db_module.py
+│   ├── gallery_module.py
+│   ├── seasons_module.py
+│   ├── weather_module.py
+│   └── database/
 │
 ├── frontend/        # JavaFX UI
-│   ├── Main.java            # Main JavaFX entry
-│   ├── HomePage.java        # UI logic
-│   ├── resources/           # CSS, icons, and FXML
+│   ├── Main.java
+│   ├── HomePage.java
+│   ├── resources/
 │
 ├── config/          # Configuration files (no keys)
 ├── lib/             # External libraries
@@ -70,18 +83,17 @@ pip install -r requirements.txt
 python app.py
 ```
 
-💡 Make sure you add your API keys in `config` (keys not included in repo).
+💡 Add your API keys in `config/api_keys.json` (keys not included in repo).
 
----
-
-### 3️⃣ Frontend Setup (JavaFX)
-
-Navigate to the `frontend` folder and run:
+### 3️⃣ Frontend Setup (JavaFX) — Windows Example
 
 ```bash
+cd frontend
 javac --module-path "C:\javafx-sdk-21\lib" --add-modules javafx.controls,javafx.fxml -cp "../lib/json-20210307.jar" Main.java
 java --module-path "C:\javafx-sdk-21\lib" --add-modules javafx.controls,javafx.fxml -cp ".;../lib/json-20210307.jar" Main
 ```
+
+*(Mac/Linux users need to adjust the JavaFX path format.)*
 
 ---
 
@@ -89,7 +101,8 @@ java --module-path "C:\javafx-sdk-21\lib" --add-modules javafx.controls,javafx.f
 
 1. Start the backend (`python app.py`)
 2. Run the JavaFX frontend
-3. Search for any city and explore its weather, best travel months, and images
-4. Chat with the AI for recommendations and flight info
+3. Search for a city to see weather, best travel months, and images
+4. Chat with the AI for travel recommendations and flight info
 
 ---
+
