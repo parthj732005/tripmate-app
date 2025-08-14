@@ -65,32 +65,3 @@ def get_weather(city: str):
     temps = [item["main"]["temp"] for item in fc["list"]]
     descs = [item["weather"][0]["description"] for item in fc["list"]]
     return _pack(min(temps), max(temps), mode(descs))
-
-    # (No need for current-weather last resort; this path should succeed.
-    # If you still want it, wrap the forecast block in try/except and fall back.)
-
-
-
-# def get_weather(city):
-#     API_KEY = json.load(open("../config/api_keys.json"))["openweather"]
-#     url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
-#     res = requests.get(url).json()
-
-#     if res.get("cod") != 200:
-#         raise Exception(f"OpenWeather API error: {res.get('message', 'Unknown error')}")
-
-#     temp_min = res["main"]["temp_min"]
-#     temp_max = res["main"]["temp_max"]
-
-#     # If min == max, adjust by ±0.5°C for display
-#     if temp_min == temp_max:
-#         temp_min -= 0.5
-#         temp_max += 0.5
-
-#     return {
-#         "lat": res["coord"]["lat"],
-#         "lon": res["coord"]["lon"],
-#         "temp_min": round(temp_min, 1),
-#         "temp_max": round(temp_max, 1),
-#         "description": res["weather"][0]["description"]
-#     }
