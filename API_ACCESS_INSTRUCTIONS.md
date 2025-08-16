@@ -92,6 +92,3 @@ After generating your API keys as per the instructions above:
 
 ---
 
-Let me know if you want me to auto-generate the whole `API_ACCESS_INSTRUCTIONS.md` file for your repo with formatting.
-
-
