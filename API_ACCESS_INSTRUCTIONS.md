@@ -64,6 +64,3 @@ Used for:
 3. Create a new **Self-Service Application**.
 4. Retrieve your **Client ID** and **Client Secret** from the dashboard.
 
----
-
-Let me know if you want a section on **how to keep your keys secure in production or during testing**.
