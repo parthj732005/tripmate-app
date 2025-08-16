@@ -105,51 +105,6 @@ def search_place():
         return jsonify({"success": False, "error": "Unable to process search"}), 500
 
 
-        # try:
-        #     # Get Weather Data
-        #     weather = get_weather(city)
-        #     temp_min = round(weather.get("temp_min", 0), 1)
-        #     temp_max = round(weather.get("temp_max", 0), 1)
-        #     description = weather.get("description", "Unavailable")
-
-        #     # Get Season Info
-        #     season_info = get_season_info(city, weather.get("lat"))
-
-        #     # Get Images
-        #     images = get_images(city)
-
-        #     # Get GPT city intro
-        #     intro = get_city_intro(city)
-
-        #     # Get top places
-        #     top_places = get_top_places(city)
-
-        #     # Log search to DB
-        #     log_search(city)
-
-        #     response_data = {
-        #         "success": True,
-        #         "city": city,
-        #         "intro": intro,
-        #         "weather": {
-        #             "temp_min": temp_min,
-        #             "temp_max": temp_max,
-        #             "description": description
-        #         },
-        #         "seasons": season_info,
-        #         "images": images,
-        #         "top_places": top_places
-        #     }
-
-        #     return jsonify(response_data)
-        
-        # except Exception as e:
-        #     logger.error(traceback.format_exc())
-        #     return jsonify({
-        #         "success": False,
-        #         "error": "Unable to process search"
-        #     }), 500
-
 # ---- BAR CHART DATA ENDPOINT ----
 @app.route('/search_statistics', methods=['GET'])
 def search_statistics():
