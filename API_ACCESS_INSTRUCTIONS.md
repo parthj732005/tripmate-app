@@ -88,7 +88,7 @@ After generating your API keys as per the instructions above:
 }
 ```
 
-⚠️ **Important:** Never upload `api_keys.json` to GitHub. Make sure it is added to your `.gitignore`.
+⚠️ **Important:** : To run TripMate on your system, first download the project. After downloading, you can create the required api_keys.json file.
 
 ---
 
