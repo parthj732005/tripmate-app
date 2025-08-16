@@ -135,8 +135,13 @@ AIRLINE_NAMES = {
     "EK": "Emirates",
     "SQ": "Singapore Airlines",
     "LH": "Lufthansa",
-    "AF": "Air France"
+    "AF": "Air France",
+    "VY": "Vueling Airlines",
+    "IB": "Iberia",
+    "MS": "EgyptAir",
+    "WY": "Oman Air"
 }
+
 
 def search_flights(origin, destination, departure_date):
     try:
@@ -145,6 +150,7 @@ def search_flights(origin, destination, departure_date):
             destinationLocationCode=destination,
             departureDate=departure_date,
             adults=1,
+            currencyCode="EUR",
             max=3
         )
         offers = response.data
