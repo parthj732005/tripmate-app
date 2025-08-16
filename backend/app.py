@@ -43,26 +43,6 @@ def get_city_intro(city):
     )
     return response.choices[0].message.content.strip()
 
-# Simulated Top Places (replace with Google API later)
-def get_top_places(city):
-    simulated_data = {
-        "Paris": [
-            {"name": "Eiffel Tower", "reviews": 120000},
-            {"name": "Louvre Museum", "reviews": 100000},
-            {"name": "Notre Dame Cathedral", "reviews": 85000},
-            {"name": "Montmartre", "reviews": 60000},
-            {"name": "Seine River Cruise", "reviews": 40000}
-        ],
-        "New York": [
-            {"name": "Statue of Liberty", "reviews": 150000},
-            {"name": "Times Square", "reviews": 120000},
-            {"name": "Central Park", "reviews": 100000},
-            {"name": "Empire State Building", "reviews": 95000},
-            {"name": "Brooklyn Bridge", "reviews": 60000}
-        ]
-    }
-    return simulated_data.get(city, [])
-
 # ---- MAIN SEARCH ENDPOINT ----
 @app.route('/search_place', methods=['GET'])
 def search_place():
@@ -83,7 +63,6 @@ def search_place():
 
         images = get_images(city)
         intro = get_city_intro(city)
-        top_places = get_top_places(city)
         log_search(city)
 
         return jsonify({
@@ -97,7 +76,6 @@ def search_place():
             },
             "seasons": season_info,
             "images": images,
-            "top_places": top_places
         })
 
     except Exception as e:
