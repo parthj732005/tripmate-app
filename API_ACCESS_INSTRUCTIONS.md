@@ -64,3 +64,34 @@ Used for:
 3. Create a new **Self-Service Application**.
 4. Retrieve your **Client ID** and **Client Secret** from the dashboard.
 
+
+
+Sure! Here’s the **final instruction** you can add to the bottom of your `API_ACCESS_INSTRUCTIONS.md` file:
+
+---
+
+### 📁 Where to Place Your API Keys
+
+After generating your API keys as per the instructions above:
+
+✅ **Create a file named** `api_keys.json`
+✅ **Place it inside the folder**: `config/`
+✅ This file should look like:
+
+```json
+{
+  "openai": "your_openai_key_here",
+  "unsplash": "your_unsplash_key_here",
+  "openweather": "your_openweather_key_here",
+  "amadeus_client_id": "your_amadeus_client_id",
+  "amadeus_client_secret": "your_amadeus_client_secret"
+}
+```
+
+⚠️ **Important:** Never upload `api_keys.json` to GitHub. Make sure it is added to your `.gitignore`.
+
+---
+
+Let me know if you want me to auto-generate the whole `API_ACCESS_INSTRUCTIONS.md` file for your repo with formatting.
+
+
