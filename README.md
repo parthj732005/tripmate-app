@@ -42,7 +42,6 @@ TripMate/
 │
 ├── frontend/        # JavaFX UI
 │   ├── Main.java
-│   ├── HomePage.java
 │   ├── resources/
 │
 ├── config/          # Configuration files (no keys)
